@@ -1,0 +1,80 @@
+{
+  "name": "@ianwalter/vuex-reset",
+  "version": "4.1.1",
+  "description": "A Vuex plugin that makes restoring initial state to the store simple",
+  "main": "dist/vuex-reset.js",
+  "browser": "dist/vuex-reset.browser.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "lint": "eslint --ext js,vue .",
+    "pretest": "dist",
+    "test": "bff",
+    "build:site": "webpack --env.singleRun"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "restore",
+    "reset",
+    "initial",
+    "state"
+  ],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianwalter/vuex-reset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ianwalter/vuex-reset/issues"
+  },
+  "homepage": "https://github.com/ianwalter/vuex-reset#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@ianwalter/clone": "^4.1.0",
+    "@ianwalter/merge": "^5.0.0"
+  },
+  "devDependencies": {
+    "@fullhuman/purgecss-loader": "^1.0.0",
+    "@ianwalter/bff": "^6.5.0",
+    "@ianwalter/dist": "^5.2.0",
+    "@ianwalter/dracula": "^2.0.0",
+    "@ianwalter/eslint-config-vue": "^2.0.1",
+    "@ianwalter/prism-loader": "^1.2.0",
+    "@ianwalter/release": "^3.0.3",
+    "@ianwalter/renovate-config": "^1.2.0",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.0.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "browserslist": "> 2%, not dead",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@ianwalter/vue"
+    ]
+  },
+  "eslintIgnore": [
+    "dist",
+    "site/dist"
+  ],
+  "renovate": {
+    "extends": [
+      "@ianwalter"
+    ]
+  }
+}
